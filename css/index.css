@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body > *:nth-child(2n+1) {
+    background-color: black;
+    color: white; /* Asegúrate de que el texto sea legible en el fondo negro */
+}
+body > *:nth-child(2n) {
+    background-color: white;
+    color: black; /* Asegúrate de que el texto sea legible en el fondo negro */
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+header h1{
+    display: inline-block;
+}
+header table{
+    margin-left: auto;
+}
+#languages{
+    border: 1px solid white;
+    border-spacing: 0;
+}
+#languages td{
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    cursor: pointer;
+}
+.technologies{
+    display: block;
+    height: 2rem;
+}
+.technologies img{
+    height: 100%;
+}
+.marked{
+    background-color: black;
+    color: white;
+}
+.unmarked{
+    background-color: white;
+    color: black;
+}
+
+#projects article{
+    background-color: black;
+    color: white;
+}
