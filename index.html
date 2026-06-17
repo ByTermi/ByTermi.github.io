@@ -1,48 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="Portfolio de Jaime Novillo Benito — Estudiante de IA y Big Data especializado en Python, Machine Learning y agentes autónomos.">
+  <title>Jaime Novillo Benito | Portfolio</title>
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+
   <header>
-
-    <h1>Jaime Novillo Benito</h1>
-    <nav>
-
-    </nav>
-    <table id="languages">
-      <tr>
-        <td class="marked">es</td>
-        <td class="unmarked">en</td>
-      </tr>
-    </table>
+    <div class="header-inner">
+      <span class="logo">JNB</span>
+      <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="index-en.html" class="lang-switch">EN</a>
+    </div>
   </header>
 
-  <main>
-    <article>
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Estudiante de Grado Superior · IA & Big Data</p>
+      <h1>Jaime Novillo<br><span class="accent">Benito</span></h1>
+      <p class="hero-desc">Apasionado por la inteligencia artificial, los agentes autónomos y la automatización. Buscando prácticas donde aplicar lo que aprendo.</p>
+      <div class="hero-actions">
+        <a href="#proyectos" class="boton">Ver proyectos</a>
+        <a href="https://github.com/ByTermi" class="boton boton-outline" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre-mi">
+    <div class="section-inner">
       <h2>Sobre mí</h2>
-      <p>Soy un estudiante de Grado Superior que busca prácticas</p>
-    </article>
-    <section id="projects">
-      <h2>Proyectos</h2>
-      <article>
-        <h3>Proyecto tienda de libros</h3>
-        <a href="https://github.com/ByTermi/bookStore" class="boton">Ver más</a>
-        <div class="technologies">
-          <h4>Tecnologías usadas</h4>
-          <img src="images/spring.svg" alt="Spring icon">
-          <img src="images/mysql.svg" alt="MySQL icon">
+      <div class="sobre-grid">
+        <div>
+          <p>Estudiante de Grado Superior de <strong>Inteligencia Artificial y Big Data</strong>. Me especializo en Python y Machine Learning, con interés creciente en agentes autónomos (LangGraph, MCP) y automatización de flujos (n8n).</p>
+          <p>Construyo proyectos reales que van desde modelos predictivos con scikit-learn hasta sistemas RAG y agentes multi-modal. Busco prácticas donde poder contribuir y seguir creciendo.</p>
         </div>
-      </article>
-    </section>
-  </main>
+        <div class="sobre-stats">
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Proyectos en GitHub</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Tecnologías dominadas</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Idiomas (ES / EN)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
+  <section id="habilidades">
+    <div class="section-inner">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>IA & Machine Learning</h3>
+          <ul>
+            <li>Python · scikit-learn</li>
+            <li>TensorFlow / Keras (CNN)</li>
+            <li>LangGraph · LangChain</li>
+            <li>RAG · Embeddings</li>
+            <li>MCP (Model Context Protocol)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Automatización</h3>
+          <ul>
+            <li>n8n</li>
+            <li>Agentes A2A</li>
+            <li>Azure (n8n en cloud)</li>
+            <li>APIs REST</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Desarrollo Web</h3>
+          <ul>
+            <li>TypeScript · JavaScript</li>
+            <li>HTML · CSS</li>
+            <li>Spring Boot</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Herramientas</h3>
+          <ul>
+            <li>Git · GitHub</li>
+            <li>Jupyter Notebooks</li>
+            <li>VS Code</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="proyectos">
+    <div class="section-inner">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
 
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Vitalia Backend</h3>
+            <span class="project-tag">Python · IA</span>
+          </div>
+          <p>Backend de sistema de seguro médico inteligente. Procesamiento de datos de salud y predicciones con ML.</p>
+          <div class="project-tech">
+            <span>Python</span><span>FastAPI</span><span>ML</span>
+          </div>
+          <a href="https://github.com/ByTermi/Vitalia-Backend" class="boton" target="_blank" rel="noopener">Ver repo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Predictive Modeling for Agriculture</h3>
+            <span class="project-tag">ML · DataCamp</span>
+          </div>
+          <p>Modelo supervisado con scikit-learn para predecir el cultivo óptimo según métricas del suelo (N, P, K, pH).</p>
+          <div class="project-tech">
+            <span>Python</span><span>scikit-learn</span><span>Jupyter</span>
+          </div>
+          <a href="https://github.com/ByTermi/Predictive-Modeling-for-Agriculture" class="boton" target="_blank" rel="noopener">Ver repo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>LangGraph + n8n</h3>
+            <span class="project-tag">Agentes · Automatización</span>
+          </div>
+          <p>Integración de agentes LangGraph con flujos n8n. Automatización de pipelines complejos con IA generativa.</p>
+          <div class="project-tech">
+            <span>Python</span><span>LangGraph</span><span>n8n</span>
+          </div>
+          <a href="https://github.com/ByTermi/LangGraphN8N" class="boton" target="_blank" rel="noopener">Ver repo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Reconocimiento Facial</h3>
+            <span class="project-tag">Computer Vision</span>
+          </div>
+          <p>Sistema de reconocimiento facial con redes neuronales. Detección y clasificación en tiempo real.</p>
+          <div class="project-tech">
+            <span>Python</span><span>OpenCV</span><span>Keras</span>
+          </div>
+          <a href="https://github.com/ByTermi/Reconocimiento-Facial" class="boton" target="_blank" rel="noopener">Ver repo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>PrivaPDF</h3>
+            <span class="project-tag">TypeScript · Web</span>
+          </div>
+          <p>Herramienta web para gestión y privacidad de PDFs. Procesamiento del lado del cliente sin subir datos.</p>
+          <div class="project-tech">
+            <span>TypeScript</span><span>HTML</span><span>CSS</span>
+          </div>
+          <a href="https://github.com/ByTermi/PrivaPDF" class="boton" target="_blank" rel="noopener">Ver repo</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Tienda de Libros</h3>
+            <span class="project-tag">Java · Backend</span>
+          </div>
+          <p>API REST completa para una tienda de libros con gestión de inventario, usuarios y pedidos.</p>
+          <div class="project-tech">
+            <img src="images/spring.svg" alt="Spring">
+            <img src="images/mysql.svg" alt="MySQL">
+          </div>
+          <a href="https://github.com/ByTermi/bookStore" class="boton" target="_blank" rel="noopener">Ver repo</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="contacto">
+    <div class="footer-inner">
+      <h2>Contacto</h2>
+      <p>Abierto a prácticas y colaboraciones. No dudes en escribirme.</p>
+      <div class="contact-links">
+        <a href="mailto:jaimenovillobenito@gmail.com" class="boton">Email</a>
+        <a href="https://github.com/ByTermi" class="boton boton-outline" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/jaime-novillo-benito" class="boton boton-outline" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="footer-copy">© 2026 Jaime Novillo Benito</p>
+    </div>
   </footer>
+
 </body>
 </html>
